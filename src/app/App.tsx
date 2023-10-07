@@ -1,10 +1,13 @@
 import './styles/index.scss';
-import { Header } from 'app/sections/header';
+import { Container } from '@mui/material';
 
+const containerStyles = { background: '#fff', height: '100vh' }
 function App() {
     return (
-        <div className='App'>
-            <Header />
+        <div className="App">
+            <Container maxWidth='sm' sx={containerStyles}>
+                This is a text
+            </Container>
         </div>
     );
 }
